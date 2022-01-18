@@ -14,12 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <service android:name="com.harshit.musicstreaming1.exoplayer.MusicService">
+        <service android:name="com.harshit.musicstreaming1.exoplayer.MusicService"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.media.browse.MediaBrowserService" />
             </intent-filter>
         </service>
-        <activity android:name="com.harshit.musicstreaming1.ui.MainActivity">
+        <activity android:name="com.harshit.musicstreaming1.ui.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
